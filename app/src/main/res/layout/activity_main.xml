@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type and Run"
+            android:textSize="40sp"
+
+            />
+        <TextView
+            android:id="@+id/tvMake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make:"
+            android:layout_below="@+id/tvTop"
+            android:textSize="30dp"
+            />
+        <EditText
+            android:id="@+id/etBNW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AGUSTA"
+            android:layout_below="@+id/tvMake"
+            style="@style/disable"
+            />
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year:"
+            android:layout_below="@+id/etBNW"
+            />
+
+
+
+        <EditText
+            android:id="@+id/etYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018"
+            android:layout_below="@+id/tvYear"
+            style="@style/disable"
+            />
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color:"
+            android:layout_below="@+id/etYear"
+            />
+        <EditText
+            android:id="@+id/etColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RED"
+            android:layout_below="@+id/tvColor"
+            style="@style/disable"
+            />
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purchase Price():"
+            android:layout_below="@+id/etColor"
+            />
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4800000"
+            android:layout_below="@+id/tvPrice"
+            style="@style/disable"
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tvEngine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engine size (litre):"
+            android:layout_below="@+id/etPrice"
+            />
+        <EditText
+            android:id="@+id/etEngine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:layout_below="@+id/tvEngine"
+            style="@style/disable"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/etEngine"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lyButton"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE CAR"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE DISEL"
+
+
+
+
+
+
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="This is vehicle No. 1
+                      Manufacturer: Mini, Current value: 17600;Effective
+                      engine size: 1.12
+                      This is vehicle No.2
+                      Manufacturer: BNM; Current value: 30400; Effective"
+            android:layout_below="@+id/lyButton"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:scrollbars="vertical"
+
+            />
+    </RelativeLayout>
+
+</ScrollView>
